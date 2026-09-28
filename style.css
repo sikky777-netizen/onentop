@@ -1,1 +1,30 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans KR",sans-serif;color:#102846}header{height:86px;padding:8px 7vw;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#fff;z-index:10}header img{height:70px}nav{display:flex;gap:30px}nav a{text-decoration:none;color:#102846;font-size:12px;font-weight:bold}.hero{height:calc(100vh - 86px);min-height:600px;background:url("assets/hero.png") center/cover;position:relative;display:flex;align-items:center}.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,22,45,.88),rgba(4,22,45,.2))}.heroText{position:relative;color:#fff;padding:8vw;max-width:900px}.heroText h1,h2{font-size:clamp(34px,5vw,64px);line-height:1.15}.heroText p{font-size:18px;line-height:1.8}.button{display:inline-block;color:#fff;border:1px solid #c49a47;padding:14px 20px;margin-top:20px;text-decoration:none;font-size:12px}section{padding:95px 8vw}em{font-style:normal;color:#b98a31;font-size:12px;font-weight:bold;letter-spacing:2px}.split{display:grid;grid-template-columns:1fr 1.2fr;gap:70px}.split p{line-height:1.9;color:#536170;font-size:17px}.dark{background:#071c35;color:#fff}.dark h2{font-size:clamp(32px,4vw,52px)}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}.cards article{border:1px solid #ffffff35;padding:28px;min-height:280px}.cards article>b{color:#c49a47}.cards p{color:#d7dee7;line-height:1.7}.projects{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:40px 0}.projects article{background:#f1f3f5;border-bottom:3px solid #b98a31;padding:35px;min-height:190px;color:#b98a31;font-size:12px}.projects h3{color:#102846;font-size:25px}.center{text-align:center}.center p{max-width:800px;margin:auto;line-height:1.9}.contact{margin-top:35px;border-left:3px solid #b98a31;padding-left:25px}footer{background:#041225;color:#9aa6b5;padding:30px 8vw;font-size:12px}@media(max-width:800px){header{height:70px}header img{height:52px}nav{gap:10px}nav a{font-size:9px}.hero{height:75vh;min-height:500px}.heroText{padding:8vw}.split{grid-template-columns:1fr;gap:10px}.cards,.projects{grid-template-columns:1fr}section{padding:65px 7vw}}
+/* V2 */
+.heroText h1{font-size:58px !important;line-height:1.18;margin:18px 0}
+.contact-section{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;background:#f5f6f7}
+.contact-section h2{font-size:48px;line-height:1.18}
+.contact-intro>p{line-height:1.8;color:#526170}
+.contact-info{margin-top:32px;border-left:3px solid #b98a31;padding-left:22px;line-height:1.7}
+.inquiry-form{background:#fff;padding:34px;box-shadow:0 12px 35px rgba(7,28,53,.08)}
+.inquiry-form label{display:block;font-size:13px;font-weight:700;margin-bottom:18px;color:#102846}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.inquiry-form input,.inquiry-form select,.inquiry-form textarea{display:block;width:100%;margin-top:8px;border:1px solid #d5d9df;background:#fff;padding:13px 12px;font:inherit;color:#102846;border-radius:0}
+.inquiry-form input:focus,.inquiry-form select:focus,.inquiry-form textarea:focus{outline:1px solid #b98a31;border-color:#b98a31}
+.inquiry-form button{width:100%;border:0;background:#071c35;color:#fff;padding:16px;font-weight:700;cursor:pointer}
+.form-note{font-size:12px;color:#788494;text-align:center;margin:12px 0 0}
+.mobile-menu-btn{display:none;border:0;background:transparent;color:#102846;font-size:28px;cursor:pointer}
+@media (min-width:801px){
+  .heroText h1{font-size:58px !important}
+}
+@media (max-width:800px){
+  .mobile-menu-btn{display:block}
+  nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 7vw 18px;box-shadow:0 10px 20px rgba(0,0,0,.08)}
+  nav.open{display:flex}
+  nav a{padding:13px 0;font-size:12px;border-bottom:1px solid #eef0f2}
+  .heroText h1{font-size:36px !important;line-height:1.25}
+  .heroText p{font-size:15px}
+  .contact-section{grid-template-columns:1fr;gap:28px}
+  .contact-section h2{font-size:36px}
+  .form-row{grid-template-columns:1fr}
+  .inquiry-form{padding:24px 20px}
+}
